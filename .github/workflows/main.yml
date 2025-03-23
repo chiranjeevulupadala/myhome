@@ -1,0 +1,18 @@
+name: Main Action
+
+on: [ push ]
+
+jobs: 
+
+  my-test-job:
+    name: My Test Job
+    runs-on: ubuntu-latest
+
+    steps:
+
+      name: My First Test
+      shell: bash
+      run: |
+        pwd
+        ls -R -ltr
+        echo "Hello My name is Chiranjeevi"
