@@ -10,7 +10,9 @@ jobs:
 
     steps:
 
-      name: My First Test
+    - uses: actions/checkout@v4
+
+    - name: My First Test
       shell: bash
       run: |
         pwd
